@@ -1,0 +1,50 @@
+﻿@model goldberg_MIS4200.Models.Member
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Organization.orgName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Organization.orgName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.memberDues)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.memberDues)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.memberRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.memberRole)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.memberId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

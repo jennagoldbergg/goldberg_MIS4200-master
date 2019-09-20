@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Alpha Kappa Psi</h1>
+    <p >Professional Business Fraternity </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Who Are We?</h2>
+        <p>
+            We are a co-ed professional business fraternity that strives to help our members succeed!
+            <br/ > @Html.ActionLink("Student", "Index", "Students")
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>What We Do</h2>
+        <p>We host professional events such as resume help, speaker series, and alumni events.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Why Join?</h2>
+        <p>Our fraternity introduces our members to job opportunities and access to resources that lead to success.</p>
+    </div>
+</div>
