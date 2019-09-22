@@ -17,5 +17,6 @@ namespace goldberg_MIS4200.Models
         }
         public string studentMajor { get; set; }
         public ICollection<Member> Member { get; set; }
+        public int schoolId { get; set; }
     }
 }

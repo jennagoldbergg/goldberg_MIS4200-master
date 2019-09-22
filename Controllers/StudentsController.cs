@@ -47,7 +47,7 @@ namespace goldberg_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "studentId,firstName,lastName,studentMajor")] Student student)
+        public ActionResult Create([Bind(Include = "studentId,firstName,lastName,studentMajor,schoolId")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace goldberg_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "studentId,firstName,lastName,studentMajor")] Student student)
+        public ActionResult Edit([Bind(Include = "studentId,firstName,lastName,studentMajor,schoolId")] Student student)
         {
             if (ModelState.IsValid)
             {
