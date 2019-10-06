@@ -41,7 +41,7 @@ namespace goldberg_MIS4200.Controllers
         public ActionResult Create()
         {
             ViewBag.organizationId = new SelectList(db.Organization, "organizationId", "orgName");
-            ViewBag.studentId = new SelectList(db.Student, "studentId", "firstName");
+            ViewBag.studentId = new SelectList(db.Student, "studentId", "fullName");
             return View();
         }
 

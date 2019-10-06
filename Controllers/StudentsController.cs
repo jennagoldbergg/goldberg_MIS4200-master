@@ -39,6 +39,7 @@ namespace goldberg_MIS4200.Controllers
         // GET: Students/Create
         public ActionResult Create()
         {
+            ViewBag.ID = new SelectList(db.Student, "studentId", "fullName");
             return View();
         }
 
