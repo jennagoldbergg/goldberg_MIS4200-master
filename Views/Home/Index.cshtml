@@ -9,20 +9,27 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Who Are We?</h2>
+        <h2>Who Are We? <span class="glyphicon glyphicon-user"</span></h2>
         <p>
             We are a co-ed professional business fraternity that strives to help our members succeed!
         </p>
     </div>
     <div class="col-md-4">
-        <h2>What We Do</h2>
+        <h2>What We Do <span class="glyphicon glyphicon-briefcase"</span></h2>
         <p>We host professional events such as resume help, speaker series, and alumni events.</p>
-        <br/ > @Html.ActionLink("Student", "Index", "Students")
-        <br/ > @Html.ActionLink("Member", "Index", "Members")
-        <br/ > @Html.ActionLink("Organization", "Index", "Organizations")
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Learn More
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="~/Students/Index">Students</a><br />
+                <a class="dropdown-item" href="~/Members/Index">Members</a><br />
+                <a class="dropdown-item" href="~/Organizations/Index">Organizations</a>
+            </div>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>Why Join?</h2>
+        <h2>Why Join? <span class="glyphicon glyphicon-question-sign"</span></h2>
         <p>Our fraternity introduces our members to job opportunities and access to resources that lead to success.</p>
     </div>
 </div>
